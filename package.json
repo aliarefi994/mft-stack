@@ -1,0 +1,16 @@
+{
+  "name": "@aliarefi/mft-stack",
+  "version": "1.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "behradz@gmail.com",
+  "license": "ISC",
+  "description": "A simple stack implementation for nodejs",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {}
+}
