@@ -1,94 +1,60 @@
-Stack Data Structure Implementation
-This project implements a simple stack data structure in Node.js with logging using the chalk library for colorful output. The stack supports common operations such as push, pop, peek, clear, and length tracking.
+# Stack Data Structure Implementation
 
-Table of Contents
-Prerequisites
-Installation
-Usage
-Stack API
-Example
-Contributing
-License
-Prerequisites
-Node.js installed on your machine (v14.0.0 or higher recommended).
-Basic knowledge of Node.js and JavaScript.
-Installation
-Clone the repository or download the files:
+A simple stack data structure in Node.js, featuring basic stack operations with colorful console logging via the `chalk` library.
 
-bash
-Copy code
-git clone https://github.com/yourusername/stack-implementation.git
-Navigate to the project folder:
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Reference](#api-reference)
+- [Example](#example)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-bash
-Copy code
-cd stack-implementation
-Install the dependencies:
+## Overview
 
-bash
-Copy code
-npm install chalk
-Usage
-You can run the stack example with the provided test.js file.
+This project provides a basic implementation of a stack, a Last-In-First-Out (LIFO) data structure. It supports push, pop, peek, clear, and length operations with a simple interface and logs each action to the console with colors using `chalk`.
 
-Add your stack operations in test.js.
-Run the program:
-bash
-Copy code
+## Features
+
+- **Push** and **pop** elements to and from the stack.
+- View the **current length** of the stack.
+- **Peek** at specific elements without removing them.
+- **Clear** the entire stack.
+- **Print** the current state of the stack.
+- Color-coded console output for better readability using `chalk`.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14.0.0 or higher).
+
+## Installation
+
+1. Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/yourusername/stack-implementation.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd stack-implementation
+    ```
+
+3. Install the required dependencies:
+    ```bash
+    npm install chalk
+    ```
+
+## Usage
+
+You can interact with the stack implementation through the provided `test.js` file, or you can import it into your own project.
+
+To run the example provided in `test.js`, execute:
+
+```bash
 node test.js
-You should see the stack operations logged to the console in color.
-
-Stack API
-The stack supports the following operations:
-
-push(item)
-Adds an item to the stack and logs the operation.
-
-pop()
-Removes and returns the top item from the stack. Logs the operation.
-
-length()
-Returns the current number of elements in the stack.
-
-peek(index)
-Returns the element at the specified index in the stack without removing it.
-
-clear()
-Removes all elements from the stack and resets its state.
-
-print()
-Logs the current contents of the stack.
-
-Example
-Here is an example of how you can use the stack:
-
-js
-Copy code
-const stack = require('./')
-
-stack.push('behrad')
-stack.push('jafar')
-stack.push('ali')
-
-console.log(`length=${stack.length()}`)
-
-console.log(stack.pop())  // ali
-console.log(stack.pop())  // jafar
-
-console.log(`length=${stack.length()}`)
-
-console.log(stack.pop())  // behrad
-
-console.log(`length=${stack.length()}`)
-
-console.log(stack.pop())  // null (since stack is empty)
-
-console.log('End')
-console.log(stack.peek(1))  // null (index out of bounds)
-console.log(stack.clear())  // stack cleared
-console.log(stack.print())  // stack is empty
-Contributing
-Feel free to submit issues or pull requests to enhance this implementation.
-
-License
-This project is licensed under the MIT License.
